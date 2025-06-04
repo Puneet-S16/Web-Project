@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSBS Department - PESCE Mandya</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #272727;
+      color: #747474;
+      margin: 0;
+      padding:0;
+      padding-left: 200px;
+      padding-top: 120px;
+
+         }
+  
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        z-index: 1000;
+      background-color: #1f1f1f;
+      color: #FFE400;
+      padding: 30px 0;
+      text-align: center;
+      font-size: 32px;
+      letter-spacing: 1.5px;
+           }
+       #H1 {
+        font-size: 20px;
+        color: #66FCF1;
+           }
+      #logo-section {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+        background-color: #1F2833;
+        border-bottom: 2px solid #45A29E;
+            }
+
+        .dept-logo {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        border-radius: 8px;
+        }
+
+        #logo-section h1 {
+        color: #66FCF1;
+        font-size: 22px;
+        font-weight: 600;
+        }
+
+nav {
+  position: fixed;
+  top: 145px; /* Start below the header */
+  left: 0;
+  height: calc(100vh - 145px); /* Adjust height to fit below header */
+  width: 200px;
+  background-color: #1F2833;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 999; /* Lower than header */
+}
+
+  
+nav a {
+    
+  display: block;
+  color: #66FCF1;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    
+  background-color: #45A29E;
+  color: #0B0C10;
+}
+
+  
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #14A76C;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s ease, transform 0.2s ease;
+    }
+  
+    nav a:hover {
+      color: #FF652F;
+      transform: scale(1.1);
+    }
+  
+    section {
+      padding: 40px 30px;
+      margin: 30px auto;
+      background-color: #1f1f1f;
+      border-left: 6px solid #FF652F;
+      border-radius: 10px;
+      max-width: 900px;
+      box-shadow: 0 0 20px rgba(255, 100, 47, 0.2);
+    }
+  
+    h2 {
+      color: #FFE400;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      color: #747474;
+    }
+  
+    th {
+      background-color: #14A76C;
+      color: #272727;
+      font-weight: bold;
+    }
+  
+    td, th {
+      border: 1px solid #747474;
+      padding: 12px;
+      text-align: left;
+    }
+  
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      background-color: #272727;
+      color: #FFE400;
+      border: 1px solid #747474;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+  
+    form button {
+      background-color: #FF652F;
+      color: #272727;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    form button:hover {
+      background-color: #FFE400;
+      color: #272727;
+    }
+  
+    footer {
+      background-color: #1f1f1f;
+      color: #747474;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    #subjects {
+  background-color: #212020;
+  padding: 30px;
+  color: #747474;
+}
+
+#subjects h2 {
+    color: #FFE400;
+    font-size: 28px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.semester {
+  margin-bottom: 30px;
+  border-left: 5px solid #45A29E;
+  padding-left: 20px;
+}
+
+.semester h3 {
+  color: #45A29E;
+  font-size: 24px;
+}
+
+.semester ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.semester li {
+  margin-bottom: 8px;
+}
+    
+  </style>
+  
+  
+</head>
+<body>
+
+    <header id="logo-section">
+        <img src="logo.png" alt="CSBS Department Logo" class="dept-logo">
+        <h4>Computer Science and Business Systems</h4>
+        <h4 id="H1">PESCE, MANDYA</h4>
+      
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#faculty">Faculty</a>
+      <a href="#courses">Courses</a>
+      <a href="#events">Events</a>
+      <a href="#achievements">Achievements</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Home</h2>
+    <p>The Computer Science and Business Systems (CSBS) program at PESCE, launched in partnership with Tata Consultancy Services (TCS) in the academic year 2023-2024 with an intake of 60 students, aims to bridge the gap between technology and business. This interdisciplinary program prepares students for the multifaceted challenges of the digital age by integrating business principles with computer science education.</p>
+  </section>
+
+  <section id="faculty">
+    <h2>Faculty</h2>
+    <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <thead>
+        <tr style="background-color: #e0e0e0;">
+          <th>Name</th>
+          <th>Designation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dr. T.M. Geetanjali</td>
+          <td>Professor & Head of Department</td>
+        </tr>
+        <tr>
+          <td>Prof. Puttaswamy B S</td>
+          <td>Assistant Professor</td>
+        </tr>
+        <tr>
+          <td>Prof. Shilpa S</td>
+          <td>Assistant Professor</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  
+
+  <section id="courses">
+    <h2>Courses</h2>
+    <ul>
+      <li>Data Structures</li>
+      <li>Business Communication</li>
+      <li>Web Development</li>
+      <li>Artificial Intelligence & Machine Learning Foundations</li>
+      <!-- Additional courses can be added here -->
+    </ul>
+  </section>
+
+  <section id="subjects">
+    <h2>Subjects</h2>
+    
+    <div class="semester">
+      <h3>1st Semester</h3>
+      <ul>
+        <li>P22MACS101 - Calculus, Differential Equations and Linear Algebra</li>
+        <li>P22PHCS102 - Applied Physics (IC)</li>
+        <li>P22ESCS103 - Principles of Programming using C(IC)</li>
+        <li>P22ESC1043 - Engg. Science Course-I </li>
+        <li>P22ETC1055 - Emerging Tech. Course-I (IoT)</li>
+        <li>P22ENG106 - Communicative English</li>
+        <li>P22SK107 - Samskruthika Kannada</li>
+        <li>P22BK107 - Balake Kannada</li>
+        <li>P22SFH108 - Scientific Foundation of Health</li>
+        <li>Rapid Prototyping, Integrated Mat Lab, Phy Lab, Programming Lab</li>
+      </ul>
+    </div>
+  
+    <div class="semester">
+      <h3>2nd Semester</h3>
+      <ul>
+        <li>P22MACS201 - Calculus and Numerical Methods</li>
+        <li>P22CHCS202 - Applied Chemistry (IC)</li>
+        <li>P22CED203 - Comp. Aided Engg. Drawing</li>
+        <li>P22ESC2043/2042 - Engg. Science Course-I </li>
+        <li>P22PLC2051 - Prog. Language Course-I [Web Programming]</li>
+        <li>P22ENG206 - Communicative English</li>
+        <li>P22ICQ207 - Indian Constitution</li>
+        <li>Innov. & Design Thinking, Social Innovation, Programming Labs</li>
+      </ul>
+    </div>
+  
+    <div class="semester">
+      <h3>3rd Semester</h3>
+      <ul>
+        <li>P22MACB301 - Discrete Mathematics</li>
+        <li>P22CB302 - Formal Language and Automata Theory</li>
+        <li>P22CB303 - Computer Organization and Architecture</li>
+        <li>P22CB304 - Software Engineering</li>
+        <li>P22CB305 - Data Structures & Algorithms</li>
+        <li>P22CB306 - Object Oriented Programming</li>
+        <li>P22HSMC307 - Employability Enhancement Skills  III</li>
+      </ul>
+    </div>
+  
+    <div class="semester">
+      <h3>4th Semester</h3>
+      <ul>
+        <li>P22MACB401 - Statistics and Probability</li>
+        <li>P22CB402 - Software Design with UML</li>
+        <li>P22CB403 - Operation Research</li>
+        <li>P22CB404 - Design and Analysis of Algorithms</li>
+        <li>P22CB405 - Database Management Systems</li>
+        <li>P22CB406 - Innovation, IP & Entrepreneurship</li>
+        <li>P22HSMC407B - Employability Skills  IV</li>
+        <li>P22INT408 - Internship  I</li>
+        <li>P22CBL410 - Design and Analysis of Algorithms Lab</li>
+        <li>P22CB411 - Business Communication & Value Science-II</li>
+      </ul>
+    </div>
+  </section>
+  
+
+  <section id="events">
+    <h2>Events</h2>
+    <p>Details about recent and upcoming events will be updated here.</p>
+    <!-- Event details can be dynamically updated -->
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <p>Information about the department's achievements will be showcased here.</p>
+    <!-- Achievement details can be dynamically updated -->
+  </section>
+  
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+  
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+  
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+  
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 CSBS Department, PESCE Mandya</p>
+  </footer>
+  
+
+</body>
+</html>
