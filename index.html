@@ -313,14 +313,25 @@ html {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #66FCF1, #45A29E);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto 15px;
-  font-size: 24px;
-  font-weight: bold;
-  color: #0B0C10;
+  overflow: hidden;
+  border: 3px solid #66FCF1;
+  transition: border-color 0.3s ease;
+}
+
+.member-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover .member-avatar {
+  border-color: #FF652F;
+}
+
+.member-card:hover .member-avatar img {
+  transform: scale(1.1);
 }
 
 .member-card h3 {
@@ -524,25 +535,12 @@ html {
 
   <section id="about-us">
     <h2>About Us</h2>
-    <p>The CSBS Department at PESCE Mandya is dedicated to providing a comprehensive education that combines computer science with business systems. Our mission is to equip students with the skills and knowledge necessary to excel in the rapidly evolving tech industry.</p>
-    <div class="team-member" onclick="toggleDetails('member3')">
-        <div class="member-card">
-          <div class="member-avatar">PS</div>
-          <h3>Puneet Singh</h3>
-          <p class="member-title">Backend Developer</p>
-          <div class="member-details" id="member3">
-            <p><strong>Semester:</strong> 3rd Semester</p>
-            <p><strong>USN:</strong> 4PE23CB042</p>
-            <p><strong>Contribution:</strong> Database Management</p>
-          </div>
-        </div>
-      </div>
-
-      
     <div class="team-container">
       <div class="team-member" onclick="toggleDetails('member1')">
         <div class="member-card">
-          <div class="member-avatar">AS</div>
+          <div class="member-avatar">
+            <img src="alok_singh.jpg" alt="Alok Singh" onerror="this.src='https://via.placeholder.com/80x80/66FCF1/0B0C10?text=AS'">
+          </div>
           <h3>Alok Singh</h3>
           <p class="member-title">Team Lead</p>
           <div class="member-details" id="member1">
@@ -555,7 +553,9 @@ html {
 
       <div class="team-member" onclick="toggleDetails('member2')">
         <div class="member-card">
-          <div class="member-avatar">SV</div>
+          <div class="member-avatar">
+            <img src="shivam_verma.jpg" alt="Shivam Verma" onerror="this.src='https://via.placeholder.com/80x80/66FCF1/0B0C10?text=SV'">
+          </div>
           <h3>Shivam Verma</h3>
           <p class="member-title">Frontend Developer</p>
           <div class="member-details" id="member2">
@@ -566,17 +566,32 @@ html {
         </div>
       </div>
 
-    
+      <div class="team-member" onclick="toggleDetails('member3')">
+        <div class="member-card">
+          <div class="member-avatar">
+            <img src="puneet_singh.jpg" alt="Puneet Singh" onerror="this.src='https://via.placeholder.com/80x80/66FCF1/0B0C10?text=PS'">
+          </div>
+          <h3>Puneet Singh</h3>
+          <p class="member-title">Backend Developer</p>
+          <div class="member-details" id="member3">
+            <p><strong>Semester:</strong> 3rd Semester</p>
+            <p><strong>USN:</strong> 4PE23CB042</p>
+            <p><strong>Specialization:</strong> Database Management</p>
+          </div>
+        </div>
+      </div>
 
       <div class="team-member" onclick="toggleDetails('member4')">
         <div class="member-card">
-          <div class="member-avatar">KR</div>
-          <h3>Krishna Raj</h3>
+          <div class="member-avatar">
+            <img src="krishna_raj.jpg" alt="Krishna Raj Kurup" onerror="this.src='https://via.placeholder.com/80x80/66FCF1/0B0C10?text=KR'">
+          </div>
+          <h3>Krishna Raj Kurup</h3>
           <p class="member-title">AI/ML Enthusiast</p>
           <div class="member-details" id="member4">
-            <p><strong>Semester:</strong> 2nd Semester</p>
+            <p><strong>Semester:</strong> 3rd Semester</p>
             <p><strong>USN:</strong> 4PE23CB025</p>
-            <p><strong>Contribution:</strong> Presentation and suggestions</p>
+            <p><strong>Specialization:</strong> Machine Learning</p>
           </div>
         </div>
       </div>
